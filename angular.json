@@ -39,6 +39,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "toastr"
+            ],
             "outputPath": "dist/finansys",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -56,7 +59,7 @@
               "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": [
-              "../node_modules/chart.js/dist/Chart.js"
+              "node_modules/chart.js/dist/Chart.js"
             ]
           },
           "configurations": {
